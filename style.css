@@ -11,7 +11,7 @@ html {
     "about store . gmail image menu sign-in";
 }
 
-a{
+a, p{
     text-decoration: none;
     color: rgb(60, 64, 67);
     font-family: Arial, Helvetica, sans-serif;
@@ -45,4 +45,44 @@ a{
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
+}
+
+#main {
+    min-height: ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text ."
+    ;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    grid-area: search;
+    height: 30px;
+    align-self: center;
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search-btn {
+
+}
+#random-search-btn {
+
+}
+#google-text{
+    grid-area: google-text;
+    justify-self: center;
 }
