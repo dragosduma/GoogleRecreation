@@ -68,6 +68,7 @@ a, p{
 #search {
     grid-area: search;
     height: 30px;
+    width: 80%;
     align-self: center;
 }
 #flexbox {
@@ -85,4 +86,52 @@ a, p{
 #google-text{
     grid-area: google-text;
     justify-self: center;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 150px 1fr 80px 80px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about advertising business how-search-works . privacy terms settings";
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+#advertising{
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+#business{
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+#how-search-works{
+    grid-area: how-search-works;
+    justify-self: center;
+    align-self: center;
+}
+#privacy{
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms{
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings{
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
 }
