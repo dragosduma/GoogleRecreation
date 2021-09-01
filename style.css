@@ -12,40 +12,47 @@ html {
     margin: 0 20px;
 }
 
-a, p{
+a, p {
     text-decoration: none;
     color: rgb(60, 64, 67);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 #about {
     grid-area: about;
     justify-self: center;
     align-self: center;
 }
+
 #store {
     grid-area: store;
     justify-self: center;
     align-self: center;
 }
+
 #gmail {
     grid-area: gmail;
     justify-self: center;
     align-self: center;
 }
+
 #image {
     grid-area: image;
     justify-self: center;
     align-self: center;
 }
+
 #menu {
     grid-area: menu;
     justify-self: center;
     align-self: center;
 }
+
 #sign-in {
     grid-area: sign-in;
     justify-self: center;
@@ -91,7 +98,7 @@ a:hover {
     max-width: 600px;
 }
 
-.search-bar:hover{
+.search-bar:hover {
     box-shadow: 0px 0px 4px 0px #b5b5b5;
 }
 
@@ -110,7 +117,7 @@ a:hover {
     border: none;
 }
 
-.search-bar input:focus{
+.search-bar input:focus {
     outline: none;
 }
 
@@ -128,21 +135,30 @@ a:hover {
     background-color: #F2F3F4;
 }
 
-.search-btns button:hover{
+.search-btns button:hover {
     border: 1px solid lightslategray
 }
 
-.google-search-btn{
+.google-search-btn {
     width: 120px;
 }
 
 .random-search-btn{
-    width: 140px;
+    width: 140px; 
 }
 
-#google-text{
+#google-text {
     grid-area: google-text;
     justify-self: center;
+}
+
+#upper-footer {
+    position: fixed;
+    background-color: rgb(243, 239, 239);
+    font-size: 15px;
+    bottom: 50px;
+    width: 100%;
+    left: 0;
 }
 
 #footer {
@@ -164,33 +180,55 @@ a:hover {
     justify-self: center;
     align-self: center;
 }
-#advertising{
+
+#advertising {
     grid-area: advertising;
     justify-self: center;
     align-self: center;
 }
-#business{
+
+#business {
     grid-area: business;
     justify-self: center;
     align-self: center;
 }
-#how-search-works{
+
+#how-search-works {
     grid-area: how-search-works;
     justify-self: center;
     align-self: center;
 }
-#privacy{
+
+#privacy {
     grid-area: privacy;
     justify-self: center;
     align-self: center;
 }
-#terms{
+
+#terms {
     grid-area: terms;
     justify-self: center;
     align-self: center;
 }
-#settings{
+
+#settings {
     grid-area: settings;
     justify-self: center;
     align-self: center;
+}
+
+@media only screen and (max-width:650px) {
+    .search-bar {
+        width: 90%;
+    }
+    footer {
+        display: block;
+        height:150px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .upper-footer {
+        height: 50px;
+    }
 }
