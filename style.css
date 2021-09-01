@@ -5,7 +5,7 @@ html {
 
 #navbar {
     display: grid;
-    grid-template-columns: 50px 50px 1fr 70px 70px 70px 80px;
+    grid-template-columns: 50px 50px 1fr 70px 65px 65px 90px;
     grid-template-rows: 50px;
     grid-template-areas: 
     "about store . gmail image menu sign-in";
@@ -48,9 +48,14 @@ a:hover {
 }
 
 #menu {
+    border-radius: 50%;
     grid-area: menu;
     justify-self: center;
     align-self: center;
+}
+
+#menu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #sign-in {
